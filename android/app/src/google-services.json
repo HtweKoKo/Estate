@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "777399515727",
+    "project_id": "real-estate-traiding",
+    "storage_bucket": "real-estate-traiding.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:777399515727:android:900135a7d3047e6b5c083a",
+        "android_client_info": {
+          "package_name": "com.example.kbs_real_estate_trading"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "777399515727-9h9t6316c8l49pc3h4avng767oq7lti8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCa2s6tqUqI0YEXVju3u1LxoXxmwOMxvMU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "777399515727-9h9t6316c8l49pc3h4avng767oq7lti8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
