@@ -42,6 +42,7 @@ dependencies:
   google_maps_flutter: ^2.2.1
   firebase_core: ^2.4.0
   cloud_firestore: ^4.2.0
+  image_picker: ^0.8.6
   
 
 dev_dependencies:

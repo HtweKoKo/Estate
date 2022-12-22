@@ -25,7 +25,7 @@ class UpLoadController extends GetxController{
             )
           ).then((estateModel){
             uploadState.value = UploadSuccess(estateModel);
-            Get.off(()=>ForSale());
+            Get.back();
           }).catchError((e){
               uploadState.value = UploadFail();
           }).whenComplete((){

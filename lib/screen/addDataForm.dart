@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/src/foundation/key.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:get/get.dart';
+import 'package:image_picker/image_picker.dart';
 import 'package:kbs_real_estate_trading/Controller/addController.dart';
 
 import 'ForSale.dart';
@@ -114,6 +115,9 @@ class _AddDataFormState extends State<AddDataForm> {
               SizedBox(
                 height: size.height / 40,
               ),
+              IconButton(
+                onPressed:chooseImage ,
+                 icon: Icon(Icons.image)),
               ElevatedButton(
                 onPressed: () async {
                   if(_key.currentState!.validate() && _key.currentState != null){
@@ -123,6 +127,7 @@ class _AddDataFormState extends State<AddDataForm> {
                           _width ?? "", 
                           _price ?? "", 
                           _description ?? "");
+                          
                     
                   }
                   
@@ -152,4 +157,23 @@ class _AddDataFormState extends State<AddDataForm> {
       ),
     );
   }
+ chooseImage()async{
+    ImagePicker imagePicker = ImagePicker();
+    List<XFile>? multiImage =[];
+    try{
+      List<XFile>? chooseImages = await imagePicker.pickMultiImage();
+      if(chooseImage != null){
+       
+    multiImage.addAll(chooseImages);
+      }
+      else{
+          print("It empty");
+      }
+    }catch(e){
+      print(e.toString());
+    }
+
+  
+    
+    }
 }
